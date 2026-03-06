@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ARCHIVE</title>
+    <link rel="shortcut icon" href="1-02_icon-icons.com_69186.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<header>
+    <h1>GAME ARCHIVE</h1>
+    <p class="subtitle">B&W // CYAN PROTOCOL</p>
+</header>
+
+<div class="container">
+    <div class="stats-panel">
+        <div class="progress-info">
+            <span id="progress-text">0% SYNCED</span>
+            <div class="progress-container">
+                <div class="progress-bar" id="total-progress"></div>
+            </div>
+        </div>
+        
+        <div class="controls-row">
+            <input type="text" id="search-bar" placeholder="BUSCAR SOFTWARE..." onkeyup="searchGame()">
+            <div class="filter-group">
+                <button class="filter-btn active" onclick="filterPlatform('all')">ALL</button>
+                <button class="filter-btn" onclick="filterPlatform('pc')">PC</button>
+                <button class="filter-btn" onclick="filterPlatform('emu')">EMU</button>
+            </div>
+        </div>
+    </div>
+
+<div id="game-list"></div>
+</div>
+
+<script src="script.js"></script> </body>
+</html>
